@@ -1,0 +1,2 @@
+# FunctionInterface
+一个面向Fragment和Activity的万能j通信框架，四个接口覆盖所有参数和返回值的情况。
