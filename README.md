@@ -6,7 +6,7 @@
 
 # 最新版本
 
-版本号：[![](https://www.jitpack.io/v/YouAreOnlyOne/AndFix.svg)](https://www.jitpack.io/#YouAreOnlyOne/AndFix)
+版本号：[![](https://www.jitpack.io/v/YouAreOnlyOne/FunctionInterface.svg)](https://www.jitpack.io/#YouAreOnlyOne/FunctionInterface)
 
 使用自行替换下面的版本号，以获得最新版本。
 
@@ -34,14 +34,14 @@
 
     dependencies {
             ...
-            implementation 'com.github.YouAreOnlyOne:AndFix:版本号'
+            implementation 'com.github.YouAreOnlyOne:FunctionInterface:版本号'
             ...
      }
     
     
 方法二：
     
- 1.第一步，下载依赖的包：https://github.com/YouAreOnlyOne/AndFix/blob/master/source/andfix-release.aar 。并放到项目的 libs 目录下面。
+ 1.第一步，下载依赖的包：https://github.com/YouAreOnlyOne/FunctionInterface/blob/master/source/functioninterface-release.aar 。并放到项目的 libs 目录下面。
     
  2.第二步,在app的build.gradle下添加如下依赖，注意，两个依赖是平级关系：
     
@@ -87,7 +87,7 @@
      @Override
     public void setFunctionsForFragment(int id) {
         BaseFragment baseFragment=(BaseFragment)fragmentManager.findFragmentById(id);
-        baseFragment.setFunctionsManager(functionsManager.addFunction(new FunctionNoParameterNoResult(BlankFragment.FUNCTION_NAME) {
+        baseFragment.setFunctionsManager(functionsManager.addFunction(new FunctionNoParameterNoResult(INTERFACE_FUNCTION_NAME) {
             @Override
             public void function() {
                 //要实现的方法的逻辑代码
